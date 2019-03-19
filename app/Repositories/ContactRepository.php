@@ -2,18 +2,18 @@
 
 namespace App\Repositories;
 
-use App\Models\Post;
+use App\Models\Contact;
 
-class PostRepository
+class ContactRepository
 {
     /* @var Model */
     private $model;
 
     /**
      * CompaniesRepository constructor.
-     * @param Post $model
+     * @param Contact $model
      */
-    public function __construct(Post $model)
+    public function __construct(Contact $model)
     {
         $this->model = $model;
     }
