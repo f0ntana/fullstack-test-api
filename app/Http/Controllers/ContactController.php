@@ -53,6 +53,6 @@ class ContactController extends Controller
             return response()->json($e, 500);
         }
 
-        return response()->json($contacts, 200);
+        return response()->json($contacts, 201);
     }
 }

@@ -32,7 +32,6 @@ class PostRepository
      */
     public function create(array $data)
     {
-        $register = $this->model->create($data);
-        return $register;
+        return $this->model->create($data);
     }
 }

@@ -48,11 +48,11 @@ class PostController extends Controller
     public function store(PostRequest $request)
     {
         try {
-            $posts = $this->postRepository->create($request->all());
+            $post = $this->postRepository->create($request->all());
         } catch (Exception $e) {
             return response()->json($e, 500);
         }
 
-        return response()->json($posts, 200);
+        return response()->json($post, 201);
     }
 }
